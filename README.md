@@ -338,20 +338,6 @@ status = sd.wait()  # 等待音频播放完毕
 0 “smbserver”的麦克风, Core Audio (1 in, 0 out)
 > 1 MacBook Air麦克风, Core Audio (1 in, 0 out)
 < 2 MacBook Air扬声器, Core Audio (0 in, 2 out)
-Traceback (most recent call last):
-  File "/Users/ro1a/Desktop/git/个人脚本/模拟耳机/rook_it.py", line 28, in <module>
-    sd.play(audio_data, fs)
-  File "/Users/ro1a/.pyenv/versions/3.9.19/lib/python3.9/site-packages/sounddevice.py", line 175, in play
-    ctx.start_stream(OutputStream, samplerate, ctx.output_channels,
-  File "/Users/ro1a/.pyenv/versions/3.9.19/lib/python3.9/site-packages/sounddevice.py", line 2582, in start_stream
-    self.stream = StreamClass(samplerate=samplerate,
-  File "/Users/ro1a/.pyenv/versions/3.9.19/lib/python3.9/site-packages/sounddevice.py", line 1494, in __init__
-    _StreamBase.__init__(self, kind='output', wrap_callback='array',
-  File "/Users/ro1a/.pyenv/versions/3.9.19/lib/python3.9/site-packages/sounddevice.py", line 817, in __init__
-    _get_stream_parameters(kind, device, channels, dtype, latency,
-  File "/Users/ro1a/.pyenv/versions/3.9.19/lib/python3.9/site-packages/sounddevice.py", line 2659, in _get_stream_parameters
-    device = _get_device_id(device, kind, raise_on_error=True)
-  File "/Users/ro1a/.pyenv/versions/3.9.19/lib/python3.9/site-packages/sounddevice.py", line 2799, in _get_device_id
     raise ValueError(
 ValueError: No output device matching 'BlackHole 16ch'
 
